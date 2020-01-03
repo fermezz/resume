@@ -12,7 +12,7 @@ commit_resume_files() {
 }
 
 upload_files() {
-  git remote add origin-resume https://${GITHUB_TOKEN}@github.com/fermezz/resume.git > /dev/null 2>&1
+  git remote add origin-resume https://${GITHUB_TOKEN}@github.com/fermezz/resume.git
   git push --quiet --set-upstream origin-resume resume-changes
 }
 
