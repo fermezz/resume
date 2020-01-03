@@ -1,0 +1,11 @@
+language: generic
+services: docker
+
+
+install:
+
+  - docker build -t resume .
+
+script:
+
+  - ./build-pdf.sh
