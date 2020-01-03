@@ -1,11 +1,11 @@
 language: generic
 services: docker
-
-
 install:
-
-  - docker build -t resume .
-
+- docker build -t resume .
 script:
-
-  - ./build-pdf.sh
+- "./build-pdf.sh"
+after_success:
+- ".travis/push.sh"
+env:
+  global:
+  - secure: YIykGVlYwTrfsGoD7qjonCrbYLJ8QgDS16l18LJY8uwrj4aUwyW1aMsMoJv9ztgeZAuZ7+xPFBmzRsQp3ebxpQybjBDqOszYbmZkYMx66AP996PHssGnuR6DZmNc2vlff5vQCIAC0BfT0HDdkrCn+HDzSArXzaEIi2/AAg9mJeOVljvX9oH6iDHrfAoFtBNfGAQ/xNjSop15p/s3+ZdsqFideg3x0Ll9Vqqo8pJpfingZbFa2IuS6U7rO+npL70TrEhiGVJna1zQvIFMAwEg2NAs2GlmuDdH5Mna4p6Ypt04yjwu/kH/p6SvaUKoYGoiHhTxK71bzPfg+rmtEE9UcfVwXYyBezqnQXd+0ssxaxhS/PZLwOCNtqKVV45Te9c+P1NJq6cRhC50BtMY12YQaMI/SKf3/iRuoTMDkPyHofhKbcVS3NSCEytyw6gzti52FXEIkXLXX3WCisr6+jxpEma4gD6sCFvrrKOyuFriEy5Zo7kb6/rpv8Oor4pDsANLedQknS9A5FsqMuveZqmUWSKfi0UNmepY5SGLr45kz+B2tfo6i8r5KQWGsBS27dEIiyihqkwtBepoHLayCRY12kj6XULGe+8axKjrtj80rpRIwZUPs7HfquVogAYq/i/7zr4dpAtjGvXYUShaf/kyYjm/IIOLpbQmrLthweYcoA8=

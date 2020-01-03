@@ -2,4 +2,4 @@
 
 docker run -v $PWD:/workdir:z resume
 
-rm resume.aux resume.log resume.out
+rm -f resume.aux resume.log resume.out
