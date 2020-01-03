@@ -1,0 +1,126 @@
+\documentclass{article}
+
+
+\usepackage{titlesec}
+\usepackage{titling}
+\usepackage[margin=1.2in]{geometry}
+\usepackage{enumitem}\setlist[description]{font=\textendash\enskip\scshape\bfseries,left=1cm}
+\usepackage{xcolor}
+\usepackage{hyperref}
+
+% \hypersetup{colorlinks=true, linkcolor=blue, filecolor=magenta, urlcolor=cyan}
+
+\titleformat{\section}
+{\huge\bfseries}
+{}
+{0em}
+{}[\titlerule]
+
+\titlespacing{\section}
+{0pt}
+{.6cm}
+{.5cm}
+ 
+\titleformat{\subsection}
+{\bfseries\Large\color{red!50!black}}
+{}
+{.3em}
+{}
+
+\titleformat{\subsubsection}[runin]
+{\bfseries}
+{}
+{1em}
+{}
+
+\renewcommand{\maketitle}
+{\begin{center}
+{\huge\bfseries
+\theauthor}
+
+\vspace{.5em}
+
+GitHub: \url{https://github.com/fermezz}\\Email: \url{fermezz@gmail.com}
+
+\end{center}}
+
+\begin{document}
+
+
+\title{R\'esum\'e}
+\author{Fernando Mezzabotta Rey}
+
+\maketitle
+
+\section{Technical Skills}
+\subsection{Languages}
+\subsubsection{Python}
+  \begin{description}
+    \item I've worked extensively in Python, from scripting all the way to developing not-so-micro services in an OO fashion.
+  \end{description}
+\subsubsection{Java}
+  \begin{description}
+    \item Know Java and it's principles but haven't really *worked* with it, beyond making projects with it at college.
+  \end{description}
+\subsubsection{Rust}
+  \begin{description}
+    \item Like it a lot. I've mainly played with it, but would love to work with Rust professionally some day. Developed an unfinished and super simple Jenkins CLI client with it, called jenr: \url{https://github.com/fermezz/jenr}.
+  \end{description}
+\subsection{CI/CD}
+\subsubsection{Jenkins}
+  \begin{description}
+    \item Worked extensively with it. Setting up several regular-jobs as well as many pipelines, in combination with many of its plugins.
+  \end{description}
+\subsubsection{Travis CI}
+  \begin{description}
+    \item Used it mainly to work with open source projects.
+  \end{description}
+\subsection{Testing Practices}
+\subsubsection{Test Driven Development [TDD]}
+\subsection{Agile Methodologies}
+\subsubsection{Scrum}
+\section{Job Experience}
+\subsection{Eventbrite – Software Engineer}
+\subsubsection{Engineering Development Academy (EDA)}
+  \begin{description}
+    \item As a junior engineer I participated in the development academy Eventbrite has to introduce engineers getting out of college or with no/little experience into the tech industry.
+  \end{description}
+\subsubsection{Music Product}
+  \begin{description}
+    \item Built several features related to Eventbrite Music.
+    \item Participated on building and maintaining the Artist Search feature so that organizers could search through \textasciitilde5M artists and tag some of them into their events.
+    \item Designed, implemented, documented and maintained public and private API endpoints.
+    \item Owned a specific service of our distributed architecture which had to respond up to \textasciitilde200 requests per second.
+    \item Monitored the before mentioned services and overall infrastructure through tools such as DataDog, Graphite, Splunk, etc.
+  \end{description}
+\subsubsection{DevTools [Current]}
+  \begin{description}
+    \item I'm participating on building an maintaining our CI/CD process with mainly Jenkins.
+    \item Supporting and maintining our built-in-house, Kubernetes-based development tool.
+    \item Participating on maintaining and improving the Docker images our services use in the before mentioned Kubernetes-based tool.
+  \end{description}
+\subsubsection{Tech Debt [Extra]}
+  \begin{description}
+    \item Participating on a project that consists in migrating all of our +100 repositories using Python from Python 2 to Python 3.
+      For that to happen, we implemented and keep improving a bunch of Jenkins pipelines that run tests – with \href{https://tox.readthedocs.io/en/latest/}{Tox} and \href{https://docs.pytest.org/en/latest/}{PyTest} – inside a Docker container.
+    \item Participated on deprecating a built-in-house, very old ORM for Python in favor of the Django ORM.
+    \item Was involved in a company-wide effort of breaking up a huge monolith into remote services.
+  \end{description}
+\section{Education}
+\subsection{Universidad Tecnológica Nacional – FRM}
+\subsubsection{Systems Engineering (2012 – 2019) – Missing only the finaly subject to graduate.}
+\section{On Culture}
+  \begin{description}
+    \item I like to participate in side projects besides my tasks in a job. It keeps me motivated and, thus, focused.
+    \item Teamwork is super important to me, as well as keeping a good work relationships with my co-workers.
+  \end{description}
+\section{Languages}
+\subsection{Spanish}
+\subsubsection{Can read – Natively}
+\subsubsection{Can speak – Natively}
+\subsection{English}
+\subsubsection{Can read – Advanced}
+\subsubsection{Can speak – Advanced}
+
+
+\end{document}
