@@ -1,5 +1,9 @@
 language: generic
 services: docker
+# Only build when I push changes to the resume.tex file in master.
+branches:
+  only:
+  - master
 install:
 - docker build -t resume .
 script:
