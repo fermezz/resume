@@ -6,7 +6,7 @@ setup_git() {
 }
 
 commit_resume_files() {
-  git checkout -b resume-changes
+  git checkout -b resume-changes-${TRAVIS_BUILD_NUMBER}
   git add resume*
   git commit --message "Update resume.pdf automatically."
 }
