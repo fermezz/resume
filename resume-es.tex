@@ -1,0 +1,125 @@
+\documentclass{article}
+
+
+\usepackage{titlesec}
+\usepackage{titling}
+\usepackage[margin=1.2in]{geometry}
+\usepackage{enumitem}\setlist[description]{font=\textendash\enskip\scshape\bfseries,left=1cm}
+\usepackage{xcolor}
+\usepackage{hyperref}
+
+\hypersetup{colorlinks=true, linkcolor=blue, filecolor=magenta, urlcolor=red}
+
+\titleformat{\section}
+{\huge\bfseries}
+{}
+{0em}
+{}[\titlerule]
+
+\titlespacing{\section}
+{0pt}
+{.6cm}
+{.5cm}
+ 
+\titleformat{\subsection}
+{\bfseries\Large\color{red!50!black}}
+{}
+{.3em}
+{}
+
+\titleformat{\subsubsection}[runin]
+{\bfseries}
+{}
+{1em}
+{}
+
+\renewcommand{\maketitle}
+{\begin{center}
+{\huge\bfseries
+\theauthor}
+
+\vspace{.5em}
+
+GitHub: \url{https://github.com/fermezz}\\LinkedIn: \url{https://linkedin.com/in/fermezz}\\Email: \url{fermezz@gmail.com}
+
+\end{center}}
+
+\begin{document}
+
+
+\title{R\'esum\'e}
+\author{Fernando Mezzabotta Rey}
+
+\maketitle
+
+\section{Technical Skills}
+\subsection{Languages}
+\subsubsection{Python}
+  \begin{description}
+    \item He trabajado extensamente con Python, desde scripting hasta desarrollar servicios completos dentro del paradigma orientado a objetos.
+  \end{description}
+\subsubsection{Java}
+  \begin{description}
+    \item Conozco Java y sus principios pero nunca trabajé profesionalmente con él, más allá de hacer proyectos en la universidad.
+  \end{description}
+\subsubsection{Rust}
+  \begin{description}
+    \item ¡Me gusta mucho! Me gusta jugar con nuevas tecnologías y aprender todo el tiempo e incluso me gustaría trabajar profesionalmente algún día con Rust. Hice una pequeña y abandonada herramienta llamada jenr: \url{https://github.com/fermezz/jenr}.
+  \end{description}
+\subsection{CI/CD}
+\subsubsection{Jenkins}
+  \begin{description}
+    \item Worked extensively with it. Setting up several regular-jobs as well as many pipelines, in combination with many of its plugins.
+    \item He trabajado mucho con Jenkins, tanto como con sus "jobs" regulares como con Jenkins Pipelines, construyendo sistemas de CI complejos.
+  \end{description}
+\subsubsection{Travis CI}
+  \begin{description}
+    \item He trabajado con cosas bastante simples en Travis, principalmente para proyectos de código abierto.
+  \end{description}
+\subsection{Testing Practices}
+\subsubsection{Test Driven Development [TDD]}
+\subsection{Agile Methodologies}
+\subsubsection{Scrum}
+\section{Job Experience}
+\subsection{Eventbrite – Software Engineer}
+\subsubsection{Engineering Development Academy (EDA)}
+  \begin{description}
+    \item Como Ingeniero junior, participé en la academia de desarrollo que tiene Eventbrite para introducir ingenieros recién graduados o gente sin tanta experiencia en el mercado laboral.
+  \end{description}
+\subsubsection{Eventbrite Music}
+  \begin{description}
+    \item Participé desarrollando varias funcionalidades para el producto de Eventbrite llamado Eventbrite Music.
+    \item Participé en construir y mantener la funcionalidad de buscar artistas para que los organizadores de eventos pudieran buscar a través de \textasciitilde5M de artistas y vincularlos a sus eventos.
+    \item Junto con mi equipo documenté, diseñé, implementé y ayudé a mantener endpoints públicos y privados de nuestra API no-tan RESTful.
+    \item Participé junto a mi equipo en ser dueños de uno de los tantos servicios remotos de nuestra arquitectura distribuída, el cual tiene que responder hasta a \textasciitilde200 requests por segundo.
+    \item Monitoreé los servicios mencionados a través de herramientas como Datadog o Splunk, entre otras.
+  \end{description}
+\subsubsection{DevTools [Current]}
+  \begin{description}
+    \item I'm participating on building an maintaining our CI/CD process with mainly Jenkins.
+    \item Como parte del equipo de DevTools participé en construir y mantener nuestro proceso de CI para \textasciitilde300 personas.
+    \item Ayudo a mantener y soportar la herramienta basada en Kubernetes que usamos para nuestro ambiente de desarrollo.
+    \item Participo en matener y mejorar las imágenes de Docker que las aplicaciones usan en la herramienta antes mencionada.
+  \end{description}
+\subsubsection{Tech Debt [Extra]}
+  \begin{description}
+    \item Participo en varios proyectos que tienen como objetivo migrar nuestros más de 100 proyectos usando Python de Python 2 a Python 3 y seguir manteniendo la versión de Python actualizada en el tiempo.
+    \item Participated on deprecating a built-in-house, very old ORM for Python in favor of the Django ORM.
+    \item Participé en deprecar un ORM para Python construído en Eventbrite para usar el ORM del proyecto de código abierto mantenido por la comunidad de Django.
+    \item Participé en un esfuerzo que abarca a toda la compañía de romper un monolítico gigante en servicios remotos.
+  \end{description}
+\section{Education}
+\subsection{Universidad Tecnológica Nacional – FRM}
+\subsubsection{Ingeniería en Sistemas – Una materia pendiente}
+\section{On Culture}
+  \begin{description}
+    \item Me gusta tener proyectos paralelos de vez en cuando, además de las tareas específicas de mi posición. Investigar cosas nuevas me mantiene motivado y, por lo tanto, concentrado.
+    \item ¡El trabajo en equipo es super importante! Busco llevarme bien con tus compañeros de trabajo y mantener una buena relación con mis mánagers porque lleva a mejores resultados.
+  \end{description}
+\section{Lenguajes}
+\subsection{English}
+\subsubsection{Lectura – Avanzado}
+\subsubsection{Escritura – Avanzado}
+
+
+\end{document}
